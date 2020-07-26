@@ -13,7 +13,7 @@ name_list = csv.reader(name_list)
 
 # Create a list consisting name, color and color name
 names = []
-error_counter = 0
+initial_error_counter = 0
 for name in name_list:
     try:
         color = functions.name_to_color_code(name[0])
@@ -24,12 +24,18 @@ for name in name_list:
             color_name = actual_name
         names.append((name[0], '#'+color, color_name))
     except:
-        error_counter += 1
+        initial_error_counter += 1
 
-print ('Color and color name generation errors occured:', error_counter)
+print ('Color and color name generation errors occured:', initial_error_counter)
 
 # Generate images
 index = 0
+image_generation_error_counter = 0
 for element in names:
-    image_generation.generate_and_save_image(element[0],element[1], element[2], index)
-    index += 1
+    try:
+        image_generation.generate_and_save_image(element[0],element[1], element[2], index)
+        index += 1
+    except:
+        image_generation_error_counter += 1
+
+print ('Image generation errors occured:', image_generation_error_counter)
