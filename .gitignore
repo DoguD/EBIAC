@@ -126,3 +126,5 @@ dmypy.json
 test.png
 
 output/
+
+.DS_Store
