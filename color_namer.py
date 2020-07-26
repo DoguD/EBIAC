@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import turkish_webcolors as webcolors
 
 
@@ -21,7 +22,9 @@ def get_colour_name(requested_colour):
     return actual_name, closest_name
 
 
+'''
 requested_colour = (119, 172, 152)
 actual_name, closest_name = get_colour_name(requested_colour)
 
 print "Actual colour name:", actual_name, ", closest colour name:", closest_name
+'''
