@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Utility functions for working with the color names and color value
 formats defined by the HTML and CSS specifications for use in
@@ -257,7 +258,6 @@ CSS3_NAMES_TO_HEX = {
     u'sarımtırakyeşili': u'#9acd32',
     u'alizarı': u'#e32636',
     u'arseniği': u'#3b444b',
-    u'celadonu': u'#acelaf',
     u'burgonyası': u'#900020',
     u'bordosu': u'#800000',
     u'devedikeni': u'#d8bfd8',
