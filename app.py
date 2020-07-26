@@ -1,4 +1,5 @@
 from chalice import Chalice
+from chalicelib import functions
 
 app = Chalice(app_name='ebiac')
 
@@ -8,9 +9,9 @@ def index():
     return {'hello': 'world'}
 
 
-@app.schedule('rate(15 minutes)')
+@app.schedule('rate(10 seconds')
 def rate_handler():
-    pass
+    functions.update_index()
 
 
 # The view function above will return {"hello": "world"}
