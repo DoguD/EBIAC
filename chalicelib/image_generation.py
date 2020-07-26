@@ -11,12 +11,12 @@ im = Image.new('RGBA', base.size, (255,255,255,0))
 draw = ImageDraw.Draw(im)
 main_color = '#ff0000'
 name = 'Dogu'
-draw.rectangle(((0, 00), (757, 757)), main_color)
-draw.rectangle(((120, 20), (620, 720)), '#ffffff')
+draw.rectangle(((0, 00), (750, 750)), main_color)
+draw.rectangle(((125, 25), (625, 725)), '#ffffff')
 draw.rectangle(((130, 30), (600, 500)), main_color)
 
-fnt = ImageFont.truetype('Roboto-Medium.ttf', 80)
-draw.text((140, 520), 'PANTONE'+u'\u00ae', 'black', font=fnt)
+fnt = ImageFont.truetype('Roboto-Medium.ttf', 60)
+draw.text((140, 520), 'Filsiz Boya'+u'\u00ae', 'black', font=fnt)
 draw.text((140, 620), name, 'black', font=fnt)
 
 
