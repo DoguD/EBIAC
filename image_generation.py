@@ -38,10 +38,11 @@ def generate_and_save_image(name, main_color, color_name, index):
 
     out.save('output/' + str(index) + '_' + name + '.png')
 
-
+'''
 main_color = '#FF0000'
-name = 'DO' + u'\u011f' + 'u'
+name = u'DO\u011fu'
 color_name = 'sarisi'
 index = 0
 
 generate_and_save_image(name, main_color, color_name, index)
+'''
