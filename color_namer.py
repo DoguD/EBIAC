@@ -1,4 +1,4 @@
-import custom_webcolors as webcolors
+import turkish_webcolors as webcolors
 
 
 def closest_colour(requested_colour):
