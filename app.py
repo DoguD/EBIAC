@@ -8,9 +8,9 @@ def index():
     return {'hello': 'world'}
 
 
-@app.route('/generate_image')
-def generate_image():
-
+@app.schedule('rate(15 minutes)')
+def rate_handler():
+    pass
 
 
 # The view function above will return {"hello": "world"}
