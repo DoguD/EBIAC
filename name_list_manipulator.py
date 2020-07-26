@@ -37,7 +37,7 @@ def sort_tuple(tup):
     for i in range(0, lst):
         for j in range(0, lst - i - 1):
             try:
-                if (tup[j][1] > tup[j + 1][1]):
+                if (tup[j][1] < tup[j + 1][1]):
                     temp = tup[j]
                     tup[j] = tup[j + 1]
                     tup[j + 1] = temp
@@ -45,7 +45,8 @@ def sort_tuple(tup):
                 pass
     return tup
 
-mixed_list = sort_tuple(mixed_list)
+
+mixed_list = sort_tuple(mixed_list[:10000])
 
 # Write to file
 output = open('src/names/ordered_mixed_name_list.csv', 'wb')
