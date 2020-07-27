@@ -128,3 +128,5 @@ test.png
 output/
 
 .DS_Store
+
+*.zip
