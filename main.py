@@ -6,8 +6,9 @@ import image_generation
 from name_list_manipulator import *
 
 # Generate and open file
-generate_source_file(100, 0)
+generate_source_file(10000, 0)
 
+'''
 name_list = open('src/names/ordered_mixed_name_list.csv')
 name_list = csv.reader(name_list)
 
@@ -39,3 +40,4 @@ for element in names:
         image_generation_error_counter += 1
 
 print ('Image generation errors occured:', image_generation_error_counter)
+'''
