@@ -73,14 +73,12 @@ HTML4_NAMES_TO_HEX = {
     u'fuşyası': u'#ff00ff',
     u'yeşili': u'#008000',
     u'grisi': u'#808080',
-    u'lime': u'#00ff00',
-    u'maroon': u'#800000',
-    u'navy': u'#000080',
-    u'olive': u'#808000',
+    u'bordosu': u'#800000',
+    u'laciverti': u'#000080',
     u'moru': u'#800080',
     u'kırmızısı': u'#ff0000',
     u'gümüşü': u'#c0c0c0',
-    u'teal': u'#008080',
+    u'turkuazı': u'#008080',
     u'beyazı': u'#ffffff',
     u'sarısı': u'#ffff00',
 }
@@ -111,35 +109,24 @@ CSS21_NAMES_TO_HEX = dict(HTML4_NAMES_TO_HEX, orange=u'#ffa500')
 # module and parses out the color names to ensure the values below are
 # correct.
 CSS3_NAMES_TO_HEX = {
-    u'camgöbeği': u'#f0f8ff',
     u'antik beyazı': u'#faebd7',
     u'camgöbeği': u'#00ffff',
     u'akuamarini': u'#7fffd4',
     u'azuresi': u'#f0ffff',
     u'beji': u'#f5f5dc',
-    u'bisküvisi': u'#ffe4c4',
     u'siyahı': u'#000000',
-    u'bademi': u'#ffebcd',
     u'mavisi': u'#0000ff',
     u'bondi mavisi': u'#0095b6',
     u'yeşimi': u'#00a86b',
     u'ecrusu': u'#cdb091',
-    u'mavieftalunu': u'#8a2be2',
     u'kahverengisi': u'#a52a2a',
-    u'odunu': u'#deb887',
-    u'aday mavisi': u'#5f9ea0',
-    u'cix yeşili': u'#7fff00',
     u'çikolatası': u'#d2691e',
     u'mercanı': u'#ff7f50',
-    u'galibardası': u'#ff0090',
-    u'peygamber çiçeği': u'#6495ed',
     u'açık sarısı': u'#fff8dc',
     u'kızılı': u'#dc143c',
     u'siyanı': u'#00ffff',
     u'koyu mavisi': u'#00008b',
-    u'siyanı': u'#008b8b',
     u'altını': u'#b8860b',
-    u'grisi': u'#a9a9a9',
     u'grisi': u'#a9a9a9',
     u'yeşili': u'#006400',
     u'hakisi': u'#bdb76b',
@@ -152,7 +139,6 @@ CSS3_NAMES_TO_HEX = {
     u'yosunu': u'#8fbc8f',
     u'arduvazi mavisi': u'#483d8b',
     u'arduvazi grisi': u'#2f4f4f',
-    u'arduvazi grisi': u'#2f4f4f',
     u'arduvazi turkuazı': u'#00ced1',
     u'eflatunu': u'#9400d3',
     u'derin pembesi': u'#ff1493',
@@ -160,8 +146,6 @@ CSS3_NAMES_TO_HEX = {
     u'loş grisi': u'#696969',
     u'mavisi': u'#1e90ff',
     u'tuğlası': u'#b22222',
-    u'çiçeği beyazı': u'#fffaf0',
-    u'ormanı yeşili': u'#228b22',
     u'fuşyası': u'#ff00ff',
     u'garip grisi': u'#dcdcdc',
     u'hayalet beyazı': u'#f8f8ff',
@@ -179,14 +163,12 @@ CSS3_NAMES_TO_HEX = {
     u'lavantası': u'#e6e6fa',
     u'lavantası': u'#fff0f5',
     u'safiri': u'#082567',
-    u'otu yeşili': u'#7cfc00',
     u'limonu': u'#fffacd',
     u'mavisi': u'#add8e6',
     u'açık mercanı': u'#f08080',
     u'siyanı': u'#e0ffff',
     u'altını': u'#fafad2',
     u'grisi': u'#d3d3d3',
-
     u'açık yeşili': u'#90ee90',
     u'açık pembesi': u'#ffb6c1',
     u'açık somonu': u'#ffa07a',
@@ -288,13 +270,10 @@ CSS3_HEX_TO_NAMES = _reversedict(CSS3_NAMES_TO_HEX)
 # consistently be returned. Since 'gray' was the only spelling
 # supported in HTML 4, CSS1, and CSS2, 'gray' and its varients are
 # chosen.
-CSS3_HEX_TO_NAMES[u'#a9a9a9'] = u'darkgray'
-CSS3_HEX_TO_NAMES[u'#2f4f4f'] = u'darkslategray'
-CSS3_HEX_TO_NAMES[u'#696969'] = u'dimgray'
-CSS3_HEX_TO_NAMES[u'#808080'] = u'gray'
-CSS3_HEX_TO_NAMES[u'#d3d3d3'] = u'lightgray'
-CSS3_HEX_TO_NAMES[u'#778899'] = u'lightslategray'
-CSS3_HEX_TO_NAMES[u'#708090'] = u'slategray'
+CSS3_HEX_TO_NAMES[u'#a9a9a9'] = u'koyu grisi'
+CSS3_HEX_TO_NAMES[u'#696969'] = u'soluk grisi'
+CSS3_HEX_TO_NAMES[u'#808080'] = u'grisi'
+CSS3_HEX_TO_NAMES[u'#d3d3d3'] = u'açık grisi'
 
 
 # Aliases of the above mappings, for backwards compatibility.
