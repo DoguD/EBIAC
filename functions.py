@@ -8,6 +8,8 @@ def name_to_color_code(name):
     if len(hex_code) > 6:
         hex_code = hex_code[:6]
     #hex_code = '#' + hex_code
+    while len(hex_code) < 6:
+        hex_code = hex_code+"0"
     return hex_code.upper()
 
 
