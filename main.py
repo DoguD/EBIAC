@@ -35,13 +35,15 @@ index = 0
 image_generation_error_counter = 0
 success = 0
 for element in names:
-    try:
-        index += 1
-        image_generation.generate_and_save_image(element[0], element[1], element[2], index)
-        success += 1
-    except:
-        print("Image generation error: ", element[0])
-        image_generation_error_counter += 1
+    if (success < 500):
+        try:
+            index += 1
+            image_generation.generate_and_save_image(element[0], element[1], element[2], index)
+            success += 1
+            print ("Progress", str(float(success) / 500 * 100), '%')
+        except:
+            print("Image generation error: ", element[0])
+            image_generation_error_counter += 1
 
 print ('Image generation errors occured:', image_generation_error_counter)
 print ('Successful generated:', image_generation_error_counter)

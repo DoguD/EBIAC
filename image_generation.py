@@ -33,7 +33,7 @@ def generate_and_save_image(name, main_color, color_name, index):
 
     # Name and color name
     name_fnt = ImageFont.truetype('Roboto-Medium.ttf', 40)
-    draw.text((140, 520 + brand_length[1]), name.decode('utf-8').title() + ' ' + color_name.title(), 'black', font=name_fnt)
+    draw.text((140, 520 + brand_length[1]), name.decode('utf-8') + ' ' + color_name.title(), 'black', font=name_fnt)
 
     # Color
     name_length = name_fnt.getsize(name)
